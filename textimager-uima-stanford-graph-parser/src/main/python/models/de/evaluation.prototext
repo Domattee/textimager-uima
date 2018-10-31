@@ -1,0 +1,140 @@
+measure{
+  key: "total-Tokens-F1"
+  value: "100.00"
+}
+measure{
+  key: "total-Sentences-F1"
+  value: "100.00"
+}
+measure{
+  key: "total-Words-F1"
+  value: "100.00"
+}
+measure{
+  key: "total-UPOS-F1"
+  value: "85.62"
+}
+measure{
+  key: "total-XPOS-F1"
+  value: "57.70"
+}
+measure{
+  key: "total-Feats-F1"
+  value: "39.27"
+}
+measure{
+  key: "total-AllTags-F1"
+  value: "19.56"
+}
+measure{
+  key: "total-Lemmas-F1"
+  value: "41.83"
+}
+measure{
+  key: "total-UAS-F1"
+  value: "84.86"
+}
+measure{
+  key: "total-LAS-F1"
+  value: "80.19"
+}
+measure{
+  key: "total-CLAS-F1"
+  value: "78.27"
+}
+measure{
+  key: "de_pud-Status"
+  value: "OK: Evaluated non-zero LAS F1 score"
+}
+measure{
+  key: "de_pud-Tokens-F1"
+  value: "100.00"
+}
+measure{
+  key: "de_pud-Sentences-F1"
+  value: "100.00"
+}
+measure{
+  key: "de_pud-Words-F1"
+  value: "100.00"
+}
+measure{
+  key: "de_pud-UPOS-F1"
+  value: "85.89"
+}
+measure{
+  key: "de_pud-XPOS-F1"
+  value: "21.06"
+}
+measure{
+  key: "de_pud-Feats-F1"
+  value: "31.10"
+}
+measure{
+  key: "de_pud-AllTags-F1"
+  value: "1.55"
+}
+measure{
+  key: "de_pud-Lemmas-F1"
+  value: "3.08"
+}
+measure{
+  key: "de_pud-UAS-F1"
+  value: "83.16"
+}
+measure{
+  key: "de_pud-LAS-F1"
+  value: "77.25"
+}
+measure{
+  key: "de_pud-CLAS-F1"
+  value: "76.33"
+}
+measure{
+  key: "de-Status"
+  value: "OK: Evaluated non-zero LAS F1 score"
+}
+measure{
+  key: "de-Tokens-F1"
+  value: "100.00"
+}
+measure{
+  key: "de-Sentences-F1"
+  value: "100.00"
+}
+measure{
+  key: "de-Words-F1"
+  value: "100.00"
+}
+measure{
+  key: "de-UPOS-F1"
+  value: "85.35"
+}
+measure{
+  key: "de-XPOS-F1"
+  value: "94.34"
+}
+measure{
+  key: "de-Feats-F1"
+  value: "47.44"
+}
+measure{
+  key: "de-AllTags-F1"
+  value: "37.56"
+}
+measure{
+  key: "de-Lemmas-F1"
+  value: "80.59"
+}
+measure{
+  key: "de-UAS-F1"
+  value: "86.56"
+}
+measure{
+  key: "de-LAS-F1"
+  value: "83.13"
+}
+measure{
+  key: "de-CLAS-F1"
+  value: "80.22"
+}
