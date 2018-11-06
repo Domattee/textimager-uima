@@ -1,0 +1,7 @@
+flask>=1.0
+numpy>=1.15
+tensorflow>=1.08
+matplotlib>=2.0
+scipy>=1.0
+backports.lzma>=0.0.10
+setuptools==39.1.0

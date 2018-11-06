@@ -8,6 +8,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.fit.component.JCasAnnotator_ImplBase;
+import org.apache.uima.fit.descriptor.ConfigurationParameter;
 import org.apache.uima.fit.descriptor.TypeCapability;
 import org.apache.uima.fit.util.JCasUtil;
 import org.apache.uima.jcas.JCas;
@@ -34,9 +35,33 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 		outputs = {"de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency"})
 
 public class SDPBase extends JCasAnnotator_ImplBase {
+	
+    /**
+     * The docker image for the dependency parser server
+     */
+    public static final String PARAM_DOCKER_IMAGE = "dockerImage";
+    @ConfigurationParameter(name = PARAM_DOCKER_IMAGE, mandatory = true, defaultValue = "texttechnologylab/textimager-sdp:1")
+    protected String dockerImage;
+    
+    /**
+     * The min port
+     */
+    public static final String PARAM_PORT_MIN = "portMin";
+    @ConfigurationParameter(name = PARAM_PORT_MIN, mandatory = true, defaultValue = "5000")
+    protected int portMin;
+    
+    /**
+     * The max port
+     */
+    public static final String PARAM_PORT_MAX = "portMax";
+    @ConfigurationParameter(name = PARAM_PORT_MAX, mandatory = true, defaultValue = "5100")
+    protected int portMax;
+    
+    
 	@Override
 	public void initialize(UimaContext aContext) throws ResourceInitializationException {
 		super.initialize(aContext);
+		
 	}
 	
 	// IP and Port of the server running the flask parser client
@@ -108,7 +133,7 @@ public class SDPBase extends JCasAnnotator_ImplBase {
 			int sentID = 0;
 			// Read tokens and align with JCas first:
 			for (Sentence sent: JCasUtil.select(aJCas, Sentence.class)) {
-				System.out.println("Processing sentence: " + Integer.toString(sentID + 1));
+				//System.out.println("Processing sentence: " + Integer.toString(sentID + 1));
 				JSONArray parsedSentence = sentences.getJSONArray(sentID);
 				Int2ObjectMap<Token> tokens = new Int2ObjectOpenHashMap<>();
 				int lineID = 0;
