@@ -28,7 +28,7 @@ from collections import defaultdict
 import os.path as op
 
 import numpy as np
-os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
+#os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
 import tensorflow as tf
 
 from parser import Configurable
