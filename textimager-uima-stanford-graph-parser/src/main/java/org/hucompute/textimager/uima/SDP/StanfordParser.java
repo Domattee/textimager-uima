@@ -34,7 +34,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 		"de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures"},
 		outputs = {"de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency"})
 
-public class SDPBase extends JCasAnnotator_ImplBase {
+public class StanfordParser extends JCasAnnotator_ImplBase {
 	
     /**
      * The docker image for the dependency parser server
