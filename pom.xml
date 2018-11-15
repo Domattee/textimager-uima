@@ -44,5 +44,6 @@
 <!--         <module>textimager-uima-io-mediawiki</module> -->
 <!--         <module>textimager-uima-spacy</module> -->
         <module>textimager-uima-stanford-graph-parser</module>
+        <module>textimager-uima-mNER</module>
     </modules>
 </project>
